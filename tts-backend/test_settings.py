@@ -1,0 +1,1 @@
+from app.settings import settings; print('当前模型名：', settings.DEFAULT_TTS_MODEL)

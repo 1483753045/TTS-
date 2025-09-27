@@ -5,13 +5,12 @@ export default {
     namespaced: true,
     state: {
         speakers: [],
-        models: [],
+        models: [], // 显式初始化 models
         isLoading: false,
-        error: null
+        error: ''
     },
     mutations: {
         SET_SPEAKERS(state, speakers) {
-            // 确保始终设置为数组
             state.speakers = Array.isArray(speakers) ? speakers : [];
         },
         SET_MODELS(state, models) {
@@ -22,49 +21,50 @@ export default {
         },
         SET_ERROR(state, error) {
             state.error = error;
+        },
+        // 核心修复：添加清除错误的 mutation（统一命名风格）
+        CLEAR_ERROR(state) {
+            state.error = '';
         }
     },
     actions: {
-        // 在Vuex的fetchSpeakers action中添加
         async fetchSpeakers({ commit }) {
-            commit('SET_LOADING', true); // 新增：开始加载
-            commit('SET_ERROR', null); // 清空之前的错误
+            commit('SET_LOADING', true);
+            commit('CLEAR_ERROR'); // 用新 mutation 清空错误
             try {
                 const response = await api.getSpeakers();
-                let speakers = response.data || [];
-                if (!Array.isArray(speakers)) speakers = [speakers];
-                commit('SET_SPEAKERS', speakers);
+                // 适配你的接口返回结构（根据实际情况调整）
+                const speakers = response.data || [];
+                commit('SET_SPEAKERS', Array.isArray(speakers) ? speakers : [speakers]);
             } catch (error) {
                 console.error('获取说话人失败:', error);
                 commit('SET_SPEAKERS', []);
-                commit('SET_ERROR', '获取说话人列表失败，请刷新重试'); // 新增：明确错误提示
+                // 更友好的错误提示
+                const errorMsg = error.response
+                    ? `获取说话人失败: ${error.response.data?.message || '服务器错误'}`
+                    : '网络异常，请检查连接';
+                commit('SET_ERROR', errorMsg);
             } finally {
-                commit('SET_LOADING', false); // 新增：结束加载
+                commit('SET_LOADING', false);
             }
         },
         async fetchModels({ commit }) {
             commit('SET_LOADING', true);
-            commit('SET_ERROR', null);
+            commit('CLEAR_ERROR'); // 新增：请求前清空错误
 
             try {
                 const response = await api.getModels();
 
                 if (response.data && response.data.success) {
                     const models = response.data.models;
-
-                    if (Array.isArray(models)) {
-                        commit('SET_MODELS', models);
-                    } else {
-                        console.warn('API返回的models不是数组，尝试转换:', models);
-                        commit('SET_MODELS', models ? [models] : ['default']);
-                    }
+                    commit('SET_MODELS', Array.isArray(models) ? models : []);
                 } else {
-                    throw new Error(response.data?.message || 'API响应格式错误');
+                    throw new Error(response.data?.message || '获取模型失败');
                 }
             } catch (error) {
                 console.error('获取模型失败:', error);
                 commit('SET_ERROR', error.message);
-                commit('SET_MODELS', ['default']);
+                commit('SET_MODELS', []); // 错误时置空更合理
             } finally {
                 commit('SET_LOADING', false);
             }

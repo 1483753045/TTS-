@@ -1,37 +1,37 @@
-// @/services/api.js（删除重复定义，统一用axios实例）
+// @/services/api.js（修改路径，添加 /v1 版本前缀）
 import axios from 'axios';
 
-// 1. 创建axios实例（统一配置基础路径、超时等，便于维护）
+// @/services/api.js
 const axiosInstance = axios.create({
-    baseURL: process.env.VUE_APP_API_URL || 'http://localhost:8000', // 统一基础路径
-    timeout: 30000, // 超时时间（语音生成可能耗时，设30秒）
-    headers: {
-        'Content-Type': 'application/json'
-    }
+    baseURL: process.env.VUE_APP_API_URL || 'http://localhost:8000', // 无多余路径
+    timeout: 30000,
+    withCredentials: true, // 必须启用（与后端 allow_credentials=True 对应）
+    headers: { 'Content-Type': 'application/json' }
 });
 
-// 2. 统一封装API方法（避免重复定义）
+
 export default {
-    // TTS相关
-    generateTTS(data) {
-        return axiosInstance.post('/api/tts/generate', data); // 用实例调用，避免报错
+    // TTS相关（路径添加 /v1）
+    generateTTS(data, config = {}) {
+        // axios.post 的第三个参数是 config，支持 params（query 参数）
+        return axiosInstance.post('/api/v1/tts/generate', data, config);
     },
     getSpeakers() {
-        return axiosInstance.get('/api/tts/speakers');
+        return axiosInstance.get('/api/v1/tts/speakers'); // 正确路径
     },
     getModels() {
-        return axiosInstance.get('/api/tts/models');
+        return axiosInstance.get('/api/v1/tts/models'); // 新增 /v1
     },
 
-    // 语音克隆相关
+    // 语音克隆相关（路径添加 /v1）
     cloneVoice(data) {
-        return axiosInstance.post('/api/voice-clone/generate', data);
+        return axiosInstance.post('/api/v1/voice-clone/generate', data); // 新增 /v1
     },
     uploadSample(file) {
         const formData = new FormData();
         formData.append('file', file);
-        return axiosInstance.post('/api/voice-clone/upload-sample', formData, {
-            headers: { 'Content-Type': 'multipart/form-data' } // 覆盖默认Content-Type
+        return axiosInstance.post('/api/v1/voice-clone/upload-sample', formData, { // 新增 /v1
+            headers: { 'Content-Type': 'multipart/form-data' }
         });
     }
 };

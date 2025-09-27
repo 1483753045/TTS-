@@ -115,12 +115,31 @@ async def generate_tts(
         if not speaker_wav or not Path(speaker_wav).exists():
             raise ValueError(f"说话人 {valid_speaker} 的参考音频不存在：{speaker_wav}")
 
-        # 2. 提取语言（优化：兼容更多说话人格式，如 zh_cn_0 → zh-cn）
-        if "_" in valid_speaker:
-            language = valid_speaker.split("_")[0] + "-" + valid_speaker.split("_")[1]
-        else:
-            language = "zh-cn"  # 默认中文
-        logger.debug(f"提取语言: {language}")
+
+        # 1. 获取所有说话人列表（从 tts_service 中获取，与前端展示的一致）
+        all_speakers = tts_service.get_speakers()  # 假设该方法返回你提供的完整说话人列表
+
+        # 2. 根据当前选中的说话人名称（valid_speaker）匹配对应的语言代码
+        matched_speaker = next(
+            (speaker for speaker in all_speakers if speaker["name"] == valid_speaker),
+            None
+        )
+
+        if not matched_speaker:
+            # 如果未匹配到说话人（理论上不会发生，因为已通过 validate_speaker 校验）
+            raise ValueError(f"未找到说话人 {valid_speaker} 的语言配置")
+
+        # 3. 直接使用说话人数据中预设的 language 字段（绝对准确）
+        language = matched_speaker["language"]
+        logger.debug(f"使用说话人预设的语言代码: {language}")
+
+        # 4. 额外校验：确保语言代码在模型支持的列表中（可选，增加容错性）
+        supported_languages = ['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']
+        if language not in supported_languages:
+            raise ValueError(
+                f"XTTS-V2 不支持该语言 | 说话人预设语言: {language}\n"
+                f"支持的语言：{supported_languages}（请检查说话人配置）"
+            )
 
         # 3. 生成语音
         output_file = await asyncio.wrap_future(

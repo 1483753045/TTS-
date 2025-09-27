@@ -1567,3 +1567,136 @@ Traceback (most recent call last):
     raise XTTSLanguageError(
 app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入语言: en-us 
 支持的语言：['en', 'fr', 'de', 'it', 'pt', 'zh-cn', 'ru', 'es']（建议使用标准化语言码，如 zh-cn）
+2025-09-28 00:00:16,426 - XTTS2Service - INFO - tts_service:607 - 开始释放线程池资源 | 等待未完成任务...
+2025-09-28 00:00:16,426 - XTTS2Service - INFO - tts_service:609 - 线程池资源释放完成
+2025-09-28 00:00:16,428 - XTTS2Service - INFO - tts_service:618 - GPU 缓存清空完成
+2025-09-28 00:00:16,428 - XTTS2Service - INFO - tts_service:625 - XTTS2 服务资源已全部释放
+2025-09-28 00:00:25,790 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 00:00:25,790 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 00:00:25,792 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 00:00:35,613 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 00:00:35,613 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 00:00:35,613 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 00:00:40,498 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:00:40,499 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:05:32,620 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:05:32,621 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:05:37,342 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:05:37,343 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:05:41,250 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:05:41,251 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:05:45,402 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:05:45,402 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:05:50,943 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:05:50,944 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:06:02,234 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:06:02,234 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:06:02,235 - XTTS2Service - ERROR - tts_service:385 - 提交语音生成任务失败 | 错误: XTTS-V2 不支持该语言 | 输入语言: en-us 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 366, in generate_speech
+    language = validate_xtts_language(language)
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 75, in validate_xtts_language
+    raise XTTSLanguageError(
+app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入语言: en-us 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+2025-09-28 00:10:54,510 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:10:54,511 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:10:54,511 - XTTS2Service - ERROR - tts_service:385 - 提交语音生成任务失败 | 错误: XTTS-V2 不支持该语言 | 输入语言: en-us 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 366, in generate_speech
+    language = validate_xtts_language(language)
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 75, in validate_xtts_language
+    raise XTTSLanguageError(
+app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入语言: en-us 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+2025-09-28 00:11:05,035 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:11:05,036 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:11:05,036 - XTTS2Service - ERROR - tts_service:385 - 提交语音生成任务失败 | 错误: XTTS-V2 不支持该语言 | 输入语言: fr-0 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 366, in generate_speech
+    language = validate_xtts_language(language)
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 75, in validate_xtts_language
+    raise XTTSLanguageError(
+app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入语言: fr-0 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+2025-09-28 00:11:12,954 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:11:12,954 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:11:12,954 - XTTS2Service - ERROR - tts_service:385 - 提交语音生成任务失败 | 错误: XTTS-V2 不支持该语言 | 输入语言: ja-0 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 366, in generate_speech
+    language = validate_xtts_language(language)
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 75, in validate_xtts_language
+    raise XTTSLanguageError(
+app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入语言: ja-0 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+2025-09-28 00:11:18,534 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:11:18,534 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:11:18,535 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 135838094531296 | 语言: zh-cn | 文本长度: 13 | 参考音频: zh-cn-sample.wav
+2025-09-28 00:11:18,535 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20250928/xtts2_gen_zh-cn_001118_9ccfc16c.wav | 语言: zh-cn
+2025-09-28 00:11:27,529 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20250928/xtts2_gen_zh-cn_001118_9ccfc16c.wav | 耗时: 8.99秒 | 大小: 147.57KB | 语言: zh-cn
+2025-09-28 00:12:32,891 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:12:32,891 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:12:32,891 - XTTS2Service - ERROR - tts_service:385 - 提交语音生成任务失败 | 错误: XTTS-V2 不支持该语言 | 输入语言: en-us 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 366, in generate_speech
+    language = validate_xtts_language(language)
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 75, in validate_xtts_language
+    raise XTTSLanguageError(
+app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入语言: en-us 
+支持的语言：['ja', 'zh-cn', 'es', 'de', 'pt', 'fr', 'it', 'ru', 'en', 'tr']（建议使用标准化语言码，如 zh-cn）
+2025-09-28 00:14:03,199 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-09-28 00:14:03,199 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-09-28 00:14:03,200 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-09-28 00:14:03,200 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-09-28 00:14:14,543 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 00:14:14,543 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 00:14:14,545 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 00:14:24,063 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 00:14:24,063 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 00:14:24,063 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 00:16:14,837 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:16:14,837 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:16:14,838 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 130161856080256 | 语言: en | 文本长度: 50 | 参考音频: en_sample.wav
+2025-09-28 00:16:14,838 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/en/20250928/xtts2_gen_en_001614_7f71637f.wav | 语言: en
+2025-09-28 00:16:26,293 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/en/20250928/xtts2_gen_en_001614_7f71637f.wav | 耗时: 11.45秒 | 大小: 187.07KB | 语言: en
+2025-09-28 00:20:14,187 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-09-28 00:20:14,187 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-09-28 00:20:14,188 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-09-28 00:20:14,188 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-09-28 00:20:23,968 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 00:20:23,968 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 00:20:23,970 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 00:20:38,607 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 00:20:38,607 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 00:20:38,607 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 00:20:44,387 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:20:44,387 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:20:44,387 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:20:44,388 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 139811575787488 | 语言: en | 文本长度: 50 | 参考音频: en_sample.wav
+2025-09-28 00:20:44,388 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/en/20250928/xtts2_gen_en_002044_0a050d2a.wav | 语言: en
+2025-09-28 00:20:55,269 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/en/20250928/xtts2_gen_en_002044_0a050d2a.wav | 耗时: 10.88秒 | 大小: 184.57KB | 语言: en
+2025-09-28 00:21:56,083 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:21:56,083 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:21:56,083 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:21:56,083 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 139811575780816 | 语言: de | 文本长度: 80 | 参考音频: de_sample.wav
+2025-09-28 00:21:56,084 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/de/20250928/xtts2_gen_de_002156_94e99a97.wav | 语言: de
+2025-09-28 00:22:13,695 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/de/20250928/xtts2_gen_de_002156_94e99a97.wav | 耗时: 17.61秒 | 大小: 410.61KB | 语言: de
+2025-09-28 00:22:32,889 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:22:32,890 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:22:37,769 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:22:37,769 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:22:37,769 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:22:37,770 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 139811575639216 | 语言: en | 文本长度: 69 | 参考音频: en_sample.wav
+2025-09-28 00:22:37,770 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/en/20250928/xtts2_gen_en_002237_f547edc4.wav | 语言: en
+2025-09-28 00:22:44,804 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/en/20250928/xtts2_gen_en_002237_f547edc4.wav | 耗时: 7.03秒 | 大小: 230.11KB | 语言: en
+2025-09-28 00:23:02,199 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 00:23:02,200 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:23:02,200 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 00:23:02,200 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 139811573652864 | 语言: de | 文本长度: 80 | 参考音频: de_sample.wav
+2025-09-28 00:23:02,200 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/de/20250928/xtts2_gen_de_002302_bafb430d.wav | 语言: de
+2025-09-28 00:23:20,184 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/de/20250928/xtts2_gen_de_002302_bafb430d.wav | 耗时: 17.98秒 | 大小: 373.61KB | 语言: de

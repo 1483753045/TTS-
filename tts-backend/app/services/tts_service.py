@@ -66,7 +66,9 @@ def validate_xtts_language(language: str) -> str:
         "de": "de", "german": "de",
         "it": "it", "italian": "it",
         "pt": "pt", "portuguese": "pt",
-        "ru": "ru", "russian": "ru"
+        "ru": "ru", "russian": "ru",
+        "tr": "tr", "turkish": "tr",  # 添加土耳其语支持
+        "ja": "ja", "japanese": "ja"   # 添加日语支持
     }
     language = language.strip().lower()
     if language not in supported_langs:
@@ -120,10 +122,10 @@ class XTTS2Service:
         # 2. 核心属性初始化
         self.tts: Optional[TTS] = None  # TTS 0.20.0 实例
         self.is_initialized: bool = False  # 服务初始化状态
-        self.supported_languages: List[str] = ["en", "zh-cn", "es", "fr", "de", "it", "pt", "ru"]  # XTTS-V2 支持语言
+        self.supported_languages: List[str] = ["en", "zh-cn", "es", "fr", "de", "it", "pt", "ru", "tr", "ja"]  # 扩展支持语言
 
         # ------------------------------
-        # 关键修改1：添加 speaker_voice_map（说话人→参考音频路径映射）
+        # 关键修改1：根据图片中的文件名修正 speaker_voice_map
         # ------------------------------
         self.speaker_voice_map = {
             "zh_cn_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "zh-cn-sample.wav"),
@@ -131,8 +133,9 @@ class XTTS2Service:
             "es_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "es_sample.wav"),
             "fr_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "fr_sample.wav"),
             "de_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "de_sample.wav"),
-            # 原 tr_sample.wav 是土耳其语，修正为意大利语
-            "pt_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "pt_sample.wav")
+            "pt_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "pt_sample.wav"),
+            "tr_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "tr_sample.wav"),  # 土耳其语
+            "ja_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "ja-sample.wav")    # 日语
         }
 
         # 3. 初始化日志（确保目录存在）
@@ -299,28 +302,28 @@ class XTTS2Service:
                     "以下说话人的参考音频文件不存在，请检查路径或补充文件：\n" +
                     "\n".join(missing_files) +
                     f"\n参考音频根目录：{self.settings['REFERENCE_VOICE_DIR']}\n"
-                    "提示：请将对应音频文件放入上述目录，文件名与映射一致（如 zh_cn_female.wav）"
+                    "提示：请将对应音频文件放入上述目录，文件名与映射一致（如 zh-cn-sample.wav）"
             )
             self.logger.error(error_msg)
             raise TTSInitializationError(error_msg)  # 终止初始化，避免后续报错
         self.logger.info("所有说话人参考音频验证通过，可正常使用语音生成功能")
 
     def get_speakers(self) -> list:
-        """修复：返回与 speaker_voice_map 一致的说话人列表（移除无参考音频的选项）"""
+        """根据图片中的文件名修正说话人列表，确保一一对应"""
         try:
             if not self.is_initialized:
                 self.logger.warning("服务未初始化，返回默认说话人列表")
 
-            # 从 speaker_voice_map 动态生成说话人列表（确保与参考音频映射一致）
+            # 根据图片中的文件名生成说话人列表
             default_speakers = [
                 {"name": "zh_cn_0", "language": "zh-cn", "desc": "中文女声（默认）", "source": "system"},
                 {"name": "en_us_0", "language": "en", "desc": "英语女声（默认）", "source": "system"},
                 {"name": "es_0", "language": "es", "desc": "西班牙语（默认）", "source": "system"},
                 {"name": "fr_0", "language": "fr", "desc": "法语（默认）", "source": "system"},
                 {"name": "de_0", "language": "de", "desc": "德语（默认）", "source": "system"},
-                {"name": "it_0", "language": "it", "desc": "意大利语（默认）", "source": "system"},
                 {"name": "pt_0", "language": "pt", "desc": "葡萄牙语（默认）", "source": "system"},
-                {"name": "ru_0", "language": "ru", "desc": "俄语（默认）", "source": "system"}
+                {"name": "tr_0", "language": "tr", "desc": "土耳其语（默认）", "source": "system"},
+                {"name": "ja_0", "language": "ja", "desc": "日语（默认）", "source": "system"}
             ]
             self.logger.info(f"返回默认说话人列表（共 {len(default_speakers)} 个）")
             return default_speakers
@@ -589,7 +592,7 @@ class XTTS2Service:
         lang_map = {
             "en": "英语", "zh-cn": "中文（简体）", "es": "西班牙语",
             "fr": "法语", "de": "德语", "it": "意大利语",
-            "pt": "葡萄牙语", "ru": "俄语"
+            "pt": "葡萄牙语", "ru": "俄语", "tr": "土耳其语", "ja": "日语"
         }
         return [(lang, lang_map[lang]) for lang in self.supported_languages]
 

@@ -18,4 +18,4 @@ mkdir -p output/cloned
 mkdir -p temp/samples
 
 # 启动FastAPI服务
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+uvicorn app.main:app --host 0.0.0.0 --port 8002 --reload

@@ -1700,3 +1700,616 @@ app.services.tts_service.XTTSLanguageError: XTTS-V2 不支持该语言 | 输入�
 2025-09-28 00:23:02,200 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 139811573652864 | 语言: de | 文本长度: 80 | 参考音频: de_sample.wav
 2025-09-28 00:23:02,200 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/de/20250928/xtts2_gen_de_002302_bafb430d.wav | 语言: de
 2025-09-28 00:23:20,184 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/de/20250928/xtts2_gen_de_002302_bafb430d.wav | 耗时: 17.98秒 | 大小: 373.61KB | 语言: de
+2025-09-28 16:15:48,628 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 16:15:48,628 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 16:15:48,630 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 19:06:21,775 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 19:06:21,775 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 19:06:21,777 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 19:06:33,051 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 19:06:33,052 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 19:06:33,052 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 19:06:33,359 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-09-28 19:06:33,359 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-09-28 19:06:33,359 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-09-28 19:06:33,359 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-09-28 19:09:45,562 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 19:09:45,562 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 19:09:45,564 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 19:09:56,306 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 19:09:56,306 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 19:09:56,306 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 19:09:56,608 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-09-28 19:09:56,608 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-09-28 19:09:56,608 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-09-28 19:09:56,608 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-09-28 19:11:29,393 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 19:11:29,393 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 19:11:29,394 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 19:16:11,150 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 19:16:11,151 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 19:16:11,151 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 19:16:11,444 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-09-28 19:16:11,444 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-09-28 19:16:11,444 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-09-28 19:16:11,444 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-09-28 19:19:04,911 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-09-28 19:19:04,911 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-09-28 19:19:04,913 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-09-28 19:19:14,317 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-09-28 19:19:14,317 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-09-28 19:19:14,318 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-09-28 19:19:18,951 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 19:19:18,951 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 19:19:19,679 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 19:19:19,679 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 19:19:19,879 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 19:19:19,879 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 19:19:27,511 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-09-28 19:19:27,512 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 19:19:27,512 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-09-28 19:19:27,513 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 126788099381696 | 语言: zh-cn | 文本长度: 8 | 参考音频: zh-cn-sample.wav
+2025-09-28 19:19:27,513 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20250928/xtts2_gen_zh-cn_191927_7c3ab713.wav | 语言: zh-cn
+2025-09-28 19:19:35,413 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20250928/xtts2_gen_zh-cn_191927_7c3ab713.wav | 耗时: 7.9秒 | 大小: 130.57KB | 语言: zh-cn
+2025-10-18 09:21:21,718 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-18 09:21:21,718 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-18 09:21:21,720 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-18 09:21:31,945 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-18 09:21:31,945 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-18 09:21:31,945 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-18 10:11:16,374 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-18 10:11:16,374 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-18 10:11:16,374 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-18 10:11:16,374 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-18 10:11:29,546 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-18 10:11:29,546 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-18 10:11:29,548 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-18 10:11:39,760 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-18 10:11:39,760 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-18 10:11:39,760 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-18 10:43:21,727 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-18 10:43:21,727 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-18 10:43:21,727 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-18 10:43:21,727 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-18 10:44:01,618 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-18 10:44:01,618 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-18 10:44:01,620 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-18 10:44:14,075 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-18 10:44:14,076 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-18 10:44:14,076 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-20 19:25:28,307 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-20 19:25:28,307 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-20 19:25:28,309 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-20 19:34:38,570 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-20 19:34:38,572 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-20 19:34:38,572 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-20 23:18:28,003 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-20 23:18:28,004 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-20 23:18:28,005 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-20 23:18:28,005 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-21 07:15:39,676 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-21 07:15:39,676 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-21 07:15:39,678 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-21 07:22:36,096 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-21 07:22:36,098 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-21 07:22:36,098 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-21 08:19:47,572 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-21 08:19:47,573 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-21 08:19:47,574 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-21 08:19:47,574 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-21 09:41:49,337 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-21 09:41:49,337 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-21 09:41:49,338 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-21 09:46:28,358 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-21 09:46:28,359 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-21 09:46:28,359 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-21 09:56:50,525 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-21 09:56:50,525 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-21 09:56:50,525 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-21 09:56:50,525 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-21 10:37:06,148 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-21 10:37:06,148 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-21 10:37:06,150 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-21 10:41:45,783 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-21 10:41:45,783 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-21 10:41:45,783 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-21 14:43:29,756 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-21 14:43:29,756 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-21 14:43:29,757 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-21 14:52:37,935 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-21 14:52:37,935 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-21 14:52:37,935 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-21 22:25:50,890 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-21 22:25:50,890 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-21 22:25:50,892 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-21 22:26:01,406 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-21 22:26:01,407 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-21 22:26:01,407 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-22 07:54:17,087 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-22 07:54:17,087 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-22 07:54:17,089 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-22 07:58:55,374 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-22 07:58:55,376 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-22 07:58:55,377 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-22 12:47:43,878 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-22 12:47:43,878 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-22 12:47:43,879 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-22 12:47:53,736 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-22 12:47:53,737 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-22 12:47:53,737 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-22 14:15:32,423 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-22 14:15:32,423 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-22 14:15:32,425 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-22 14:15:42,030 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-22 14:15:42,030 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-22 14:15:42,030 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-22 19:17:42,360 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-22 19:17:42,361 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-22 19:17:42,362 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-22 19:26:52,238 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-22 19:26:52,239 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-22 19:26:52,239 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-23 07:42:14,629 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-23 07:42:14,630 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-23 07:42:14,631 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-23 07:42:27,358 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-23 07:42:27,359 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-23 07:42:27,359 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-27 15:00:28,272 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 15:00:28,272 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 15:00:28,274 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 15:09:35,727 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-27 15:09:35,729 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-27 15:09:35,729 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-27 16:30:55,904 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:30:55,905 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:30:55,905 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:30:55,924 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403306080 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:30:55,924 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_163055_98fa5ba1.wav | 语言: zh-cn
+2025-10-27 16:31:22,871 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_163055_98fa5ba1.wav | 耗时: 26.95秒 | 大小: 478.57KB | 语言: zh-cn
+2025-10-27 16:36:14,091 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:36:14,091 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:36:14,091 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:36:14,092 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401113936 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:36:14,092 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_163614_b9c4b9f9.wav | 语言: zh-cn
+2025-10-27 16:36:38,732 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_163614_b9c4b9f9.wav | 耗时: 24.64秒 | 大小: 474.07KB | 语言: zh-cn
+2025-10-27 16:43:26,970 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:43:26,971 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:43:26,971 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:43:26,972 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401121808 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:43:26,972 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_164326_1983df51.wav | 语言: zh-cn
+2025-10-27 16:43:51,710 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_164326_1983df51.wav | 耗时: 24.74秒 | 大小: 476.57KB | 语言: zh-cn
+2025-10-27 16:44:12,898 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:44:12,898 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:44:12,899 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:44:12,900 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403309440 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:44:12,900 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_164412_7cb9207b.wav | 语言: zh-cn
+2025-10-27 16:44:37,979 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_164412_7cb9207b.wav | 耗时: 25.08秒 | 大小: 480.57KB | 语言: zh-cn
+2025-10-27 16:50:28,628 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:50:28,629 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:50:28,629 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:50:28,630 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401117536 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:50:28,630 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_165028_ae918f8f.wav | 语言: zh-cn
+2025-10-27 16:50:54,591 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_165028_ae918f8f.wav | 耗时: 25.96秒 | 大小: 498.07KB | 语言: zh-cn
+2025-10-27 16:51:15,863 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:51:15,864 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:51:15,864 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:51:15,865 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401113696 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:51:15,865 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_165115_d262ce72.wav | 语言: zh-cn
+2025-10-27 16:51:40,404 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_165115_d262ce72.wav | 耗时: 24.54秒 | 大小: 472.07KB | 语言: zh-cn
+2025-10-27 16:59:41,598 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 16:59:41,598 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:59:41,598 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 16:59:41,600 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401109760 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 16:59:41,600 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_165941_36dbb26e.wav | 语言: zh-cn
+2025-10-27 17:00:07,921 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_165941_36dbb26e.wav | 耗时: 26.32秒 | 大小: 504.57KB | 语言: zh-cn
+2025-10-27 17:00:33,705 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:00:33,705 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:00:33,705 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:00:33,706 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401119456 | 语言: zh-cn | 文本长度: 148 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:00:33,707 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_170033_b0abc2dd.wav | 语言: zh-cn
+2025-10-27 17:00:57,464 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_170033_b0abc2dd.wav | 耗时: 23.76秒 | 大小: 459.07KB | 语言: zh-cn
+2025-10-27 17:10:56,850 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:10:56,851 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:10:56,851 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:10:56,852 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403442384 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:10:56,852 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_171056_3692262a.wav | 语言: zh-cn
+2025-10-27 17:11:19,254 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_171056_3692262a.wav | 耗时: 22.4秒 | 大小: 433.07KB | 语言: zh-cn
+2025-10-27 17:17:16,918 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:17:16,918 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:17:16,918 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:17:16,920 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977401121952 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:17:16,920 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_171716_04ba8d4c.wav | 语言: zh-cn
+2025-10-27 17:17:21,019 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_171716_04ba8d4c.wav | 耗时: 4.1秒 | 大小: 472.07KB | 语言: zh-cn
+2025-10-27 17:17:58,426 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:17:58,427 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:17:58,427 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:17:58,428 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403113216 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:17:58,428 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_171758_8d5b7c5a.wav | 语言: zh-cn
+2025-10-27 17:18:26,394 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_171758_8d5b7c5a.wav | 耗时: 27.97秒 | 大小: 533.07KB | 语言: zh-cn
+2025-10-27 17:21:48,152 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:21:48,152 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:21:48,152 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:21:48,153 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403115424 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:21:48,154 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_172148_8f34318b.wav | 语言: zh-cn
+2025-10-27 17:22:14,284 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_172148_8f34318b.wav | 耗时: 26.13秒 | 大小: 500.57KB | 语言: zh-cn
+2025-10-27 17:25:09,028 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:25:09,028 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:25:09,028 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:25:09,029 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403307424 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:25:09,029 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_172509_d779b384.wav | 语言: zh-cn
+2025-10-27 17:25:35,801 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_172509_d779b384.wav | 耗时: 26.77秒 | 大小: 511.07KB | 语言: zh-cn
+2025-10-27 17:29:46,797 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:29:46,797 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:29:46,797 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:29:46,799 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 123977403313232 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:29:46,799 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_172946_e2eae8ea.wav | 语言: zh-cn
+2025-10-27 17:30:10,481 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_172946_e2eae8ea.wav | 耗时: 23.68秒 | 大小: 457.07KB | 语言: zh-cn
+2025-10-27 17:42:09,664 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-27 17:42:09,664 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-27 17:42:09,665 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-27 17:42:09,665 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-27 17:42:24,052 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 17:42:24,052 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 17:42:24,053 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 17:43:48,882 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-27 17:43:48,882 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-27 17:43:48,882 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-27 17:43:48,882 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-27 17:44:26,085 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 17:44:26,085 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 17:44:26,086 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 17:49:04,795 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-27 17:49:04,796 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-27 17:49:04,796 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-27 17:51:10,490 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:51:10,490 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:51:10,490 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:51:10,492 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 137145163336624 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:51:10,492 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_175110_84e67979.wav | 语言: zh-cn
+2025-10-27 17:51:27,099 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_175110_84e67979.wav | 耗时: 16.61秒 | 大小: 533.07KB | 语言: zh-cn
+2025-10-27 17:55:15,347 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 17:55:15,347 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:55:15,347 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 17:55:15,348 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 137145163245856 | 语言: zh-cn | 文本长度: 130 | 参考音频: zh-cn-sample.wav
+2025-10-27 17:55:15,348 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_175515_2719b4a0.wav | 语言: zh-cn
+2025-10-27 17:55:27,997 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_175515_2719b4a0.wav | 耗时: 12.65秒 | 大小: 472.07KB | 语言: zh-cn
+2025-10-27 19:40:59,648 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 19:40:59,648 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 19:40:59,650 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 19:50:09,037 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-27 19:50:09,038 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-27 19:50:09,038 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-27 20:01:14,571 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 20:01:14,572 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 20:01:14,572 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 20:01:14,588 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 133959526599696 | 语言: zh-cn | 文本长度: 453 | 参考音频: zh-cn-sample.wav
+2025-10-27 20:01:14,590 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_200114_98aab860.wav | 语言: zh-cn
+2025-10-27 20:02:44,434 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_200114_98aab860.wav | 耗时: 89.84秒 | 大小: 1709.2KB | 语言: zh-cn
+2025-10-27 20:16:34,719 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-27 20:16:34,719 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-27 20:16:34,721 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-27 20:16:34,721 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-27 20:16:47,187 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:16:47,187 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:16:47,189 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 20:24:40,337 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-27 20:24:40,337 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-27 20:24:40,337 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-27 20:24:40,337 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-27 20:24:51,974 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:24:51,975 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:24:51,976 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 20:28:24,644 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-27 20:28:24,644 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-27 20:28:24,644 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-27 20:28:24,644 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-27 20:28:36,167 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:28:36,167 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:28:36,168 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 20:35:44,514 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:35:44,514 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:35:44,516 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 20:41:24,374 - XTTS2Service - INFO - tts_service:610 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-27 20:41:24,374 - XTTS2Service - INFO - tts_service:612 - 线程池资源释放完成
+2025-10-27 20:41:24,374 - XTTS2Service - INFO - tts_service:621 - GPU 缓存清空完成
+2025-10-27 20:41:24,374 - XTTS2Service - INFO - tts_service:628 - XTTS2 服务资源已全部释放
+2025-10-27 20:50:24,685 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:50:24,685 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:50:24,687 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 20:58:05,899 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:58:05,899 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:58:05,901 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 20:58:30,074 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-27 20:58:30,074 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-27 20:58:30,076 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-27 21:07:37,853 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-27 21:07:37,861 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-27 21:07:37,861 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-27 21:19:34,292 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 21:19:34,292 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 21:26:12,103 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 21:26:12,104 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 21:26:28,831 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 21:26:28,841 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 21:32:40,216 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 21:32:40,216 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 21:32:40,217 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 21:32:40,219 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 130551107940368 | 语言: zh-cn | 文本长度: 155 | 参考音频: zh-cn-sample.wav
+2025-10-27 21:32:40,219 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_213240_ccc767c5.wav | 语言: zh-cn
+2025-10-27 21:33:09,580 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_213240_ccc767c5.wav | 耗时: 29.36秒 | 大小: 520.07KB | 语言: zh-cn
+2025-10-27 22:50:54,636 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 22:50:54,636 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 22:50:54,636 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 22:50:54,638 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 130551107939600 | 语言: zh-cn | 文本长度: 326 | 参考音频: zh-cn-sample.wav
+2025-10-27 22:50:54,638 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_225054_695021ee.wav | 语言: zh-cn
+2025-10-27 22:51:45,068 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_225054_695021ee.wav | 耗时: 50.43秒 | 大小: 1309.17KB | 语言: zh-cn
+2025-10-27 23:08:10,459 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 23:08:10,459 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 23:08:10,459 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 23:08:10,461 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 130551107934704 | 语言: zh-cn | 文本长度: 155 | 参考音频: zh-cn-sample.wav
+2025-10-27 23:08:10,461 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_230810_b945808a.wav | 语言: zh-cn
+2025-10-27 23:08:38,975 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_230810_b945808a.wav | 耗时: 28.51秒 | 大小: 541.57KB | 语言: zh-cn
+2025-10-27 23:12:09,263 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-27 23:12:09,264 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 23:12:09,264 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-27 23:12:09,265 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 130551107931200 | 语言: zh-cn | 文本长度: 192 | 参考音频: zh-cn-sample.wav
+2025-10-27 23:12:09,265 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_231209_60273e51.wav | 语言: zh-cn
+2025-10-27 23:12:54,279 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251027/xtts2_gen_zh-cn_231209_60273e51.wav | 耗时: 45.01秒 | 大小: 887.64KB | 语言: zh-cn
+2025-10-28 00:34:06,833 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:25:44,042 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 09:25:44,042 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 09:25:44,044 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 09:34:54,192 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 09:34:54,194 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 09:34:54,194 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 09:50:28,682 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:50:55,921 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 09:50:55,922 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:50:55,922 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:50:55,939 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 134618045770112 | 语言: en | 文本长度: 150 | 参考音频: en_sample.wav
+2025-10-28 09:50:55,939 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/en/20251028/xtts2_gen_en_095055_f4edee3c.wav | 语言: en
+2025-10-28 09:51:19,052 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/en/20251028/xtts2_gen_en_095055_f4edee3c.wav | 耗时: 23.11秒 | 大小: 406.57KB | 语言: en
+2025-10-28 09:53:51,484 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:53:56,616 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:54:20,470 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 09:54:20,470 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:54:20,471 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 09:54:20,472 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 134618046198592 | 语言: en | 文本长度: 150 | 参考音频: en_sample.wav
+2025-10-28 09:54:20,472 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/en/20251028/xtts2_gen_en_095420_d71f321d.wav | 语言: en
+2025-10-28 09:54:40,810 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/en/20251028/xtts2_gen_en_095420_d71f321d.wav | 耗时: 20.34秒 | 大小: 393.57KB | 语言: en
+2025-10-28 10:21:57,144 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 10:21:57,144 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 10:21:57,146 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 10:26:37,018 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 10:26:37,019 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 10:26:37,019 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 10:30:25,192 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 10:30:46,954 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 10:30:46,954 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 10:30:46,954 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 10:30:46,959 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 136568672672288 | 语言: en | 文本长度: 150 | 参考音频: en_sample.wav
+2025-10-28 10:30:46,959 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/en/20251028/xtts2_gen_en_103046_3792f33f.wav | 语言: en
+2025-10-28 10:31:09,521 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/en/20251028/xtts2_gen_en_103046_3792f33f.wav | 耗时: 22.56秒 | 大小: 398.07KB | 语言: en
+2025-10-28 10:41:16,982 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:09:11,537 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 11:09:11,538 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 11:09:11,539 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 11:09:22,901 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 11:09:22,901 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 11:09:22,901 - XTTS2Service - INFO - tts_service:656 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 11:12:24,728 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 11:12:24,729 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 11:12:24,730 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 11:29:53,677 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 11:29:53,677 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 11:29:53,679 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 11:30:04,817 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 11:30:04,817 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 11:30:04,817 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 11:30:49,113 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:30:56,128 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:31:30,269 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 11:31:30,269 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:31:30,269 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:31:30,272 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 126814710615536 | 语言: zh-cn | 文本长度: 150 | 参考音频: zh-cn-sample.wav
+2025-10-28 11:31:30,272 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251028/xtts2_gen_zh-cn_113130_0d2f3b98.wav | 语言: zh-cn
+2025-10-28 11:31:57,845 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251028/xtts2_gen_zh-cn_113130_0d2f3b98.wav | 耗时: 27.57秒 | 大小: 491.57KB | 语言: zh-cn
+2025-10-28 11:34:36,486 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:34:52,577 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:35:14,716 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 11:35:14,717 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:35:14,717 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 11:35:14,718 - XTTS2Service - INFO - tts_service:379 - 语音生成任务提交成功 | 任务ID: 126817247520096 | 语言: zh-cn | 文本长度: 150 | 参考音频: zh-cn-sample.wav
+2025-10-28 11:35:14,718 - XTTS2Service - INFO - tts_service:402 - 开始生成语音 | 输出路径: ./output/xtts2/generated/zh-cn/20251028/xtts2_gen_zh-cn_113514_62ad8a2f.wav | 语言: zh-cn
+2025-10-28 11:35:43,205 - XTTS2Service - INFO - tts_service:419 - 语音生成成功 | 路径: ./output/xtts2/generated/zh-cn/20251028/xtts2_gen_zh-cn_113514_62ad8a2f.wav | 耗时: 28.49秒 | 大小: 544.07KB | 语言: zh-cn
+2025-10-28 15:38:30,077 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 15:38:30,077 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 15:38:30,079 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 15:47:37,878 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 15:47:37,879 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 15:47:37,879 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 15:47:43,358 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 15:52:36,804 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 15:58:38,998 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 15:58:48,596 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:03:41,384 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:03:56,833 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:10:09,471 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:10:14,258 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:13:41,185 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:18:16,114 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:18:19,910 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:23:01,882 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:23:05,195 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:26:06,915 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:26:09,063 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 16:32:18,699 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 16:32:18,699 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 16:32:18,701 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 16:34:18,383 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 16:34:18,383 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 16:34:18,384 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 16:43:28,072 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 16:43:28,072 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 16:43:28,072 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 16:51:03,379 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 16:51:03,379 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 16:51:03,380 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 16:55:42,119 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 16:55:42,119 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 16:55:42,119 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 17:14:57,843 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 17:14:57,843 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 17:14:57,844 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 17:18:07,312 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 17:18:07,313 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 17:18:07,314 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 17:18:17,938 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 17:18:17,938 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 17:18:17,938 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 17:29:09,771 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 17:29:09,771 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 17:29:09,773 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 17:29:18,576 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 17:29:18,576 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 17:29:18,577 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 17:29:29,605 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 17:29:29,605 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 17:29:29,605 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 17:29:29,895 - XTTS2Service - INFO - tts_service:650 - 开始释放线程池资源 | 等待未完成任务...
+2025-10-28 17:29:29,895 - XTTS2Service - INFO - tts_service:652 - 线程池资源释放完成
+2025-10-28 17:29:29,895 - XTTS2Service - INFO - tts_service:661 - GPU 缓存清空完成
+2025-10-28 17:29:29,895 - XTTS2Service - INFO - tts_service:668 - XTTS2 服务资源已全部释放
+2025-10-28 17:32:18,139 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 17:32:18,140 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 17:32:18,141 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 17:32:27,542 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 17:32:27,542 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 17:32:27,542 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 17:32:57,176 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:34:22,919 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=测试音色.wav，格式=application/octet-stream，大小=0.14MB
+2025-10-28 17:38:07,751 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=standard_audio.wav，格式=application/octet-stream，大小=0.14MB
+2025-10-28 17:38:30,454 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=standard_audio.wav，格式=audio/wav，大小=0.14MB
+2025-10-28 17:38:30,455 - XTTS2Service - INFO - tts:172 - 语音素材保存成功：路径=data/voice_materials/clone_2592350f6b84.wav，素材ID=clone_2592350f6b84
+2025-10-28 17:39:37,589 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:39:46,593 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:40:01,689 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:47:29,074 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:47:41,795 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:52:56,953 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 17:53:33,781 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=dsfwe.wav，格式=audio/wav，大小=0.46MB
+2025-10-28 17:53:33,781 - XTTS2Service - INFO - tts:172 - 语音素材保存成功：路径=data/voice_materials/clone_4a1b09d4362c.wav，素材ID=clone_4a1b09d4362c
+2025-10-28 17:53:45,552 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 19:04:45,468 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 19:04:45,468 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 19:04:45,470 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 19:04:54,862 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 19:04:54,862 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 19:04:54,862 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 19:05:46,596 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 19:22:34,576 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=31100.wav，格式=audio/wav，大小=1.43MB
+2025-10-28 19:22:34,577 - XTTS2Service - INFO - tts:172 - 语音素材保存成功：路径=data/voice_materials/clone_d993a90bf227.wav，素材ID=clone_d993a90bf227
+2025-10-28 19:22:39,818 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 19:22:49,581 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 21:57:29,537 - XTTS2Service - INFO - tts_service:213 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 21:57:29,537 - XTTS2Service - INFO - tts_service:225 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 21:57:29,539 - XTTS2Service - INFO - tts_service:273 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 21:57:40,692 - XTTS2Service - INFO - tts_service:285 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 21:57:40,692 - XTTS2Service - INFO - tts_service:309 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 21:57:40,692 - XTTS2Service - INFO - tts_service:696 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 22:03:16,471 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 22:05:37,786 - XTTS2Service - INFO - tts_service:328 - 返回默认说话人列表（共 8 个）
+2025-10-28 22:07:30,527 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=31100.wav，格式=audio/wav，大小=1.43MB
+2025-10-28 22:07:30,528 - XTTS2Service - INFO - tts:172 - 语音素材保存成功：路径=data/voice_materials/clone_128d1fbaa098.wav，素材ID=clone_128d1fbaa098
+2025-10-28 22:07:47,826 - XTTS2Service - INFO - tts_service:342 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 22:07:47,827 - XTTS2Service - INFO - tts:237 - 开始克隆音色生成：素材ID=clone_128d1fbaa098，文本长度=182
+2025-10-28 22:07:47,849 - XTTS2Service - WARNING - tts_service:557 - 参考音频时长过长（17.03秒）| 克隆耗时可能增加 | 建议 3-10 秒
+2025-10-28 22:07:47,849 - XTTS2Service - ERROR - tts_service:636 - 克隆生成失败: name 'uuid4' is not defined
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 618, in generate_speech_with_clone
+    output_file = output_dir / f"clone_{uuid4().hex[:12]}.wav"
+NameError: name 'uuid4' is not defined
+2025-10-28 22:07:47,849 - XTTS2Service - ERROR - tts:264 - 克隆生成失败: name 'uuid4' is not defined
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/routers/tts.py", line 242, in generate_tts_with_clone
+    tts_service.generate_speech_with_clone(  # 替换为实际存在的方法名
+  File "/home/wxa/tts-system/tts-backend/app/services/tts_service.py", line 618, in generate_speech_with_clone
+    output_file = output_dir / f"clone_{uuid4().hex[:12]}.wav"
+NameError: name 'uuid4' is not defined
+2025-10-28 22:26:14,126 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 22:26:14,126 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 22:26:14,128 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 22:26:22,463 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 22:26:22,463 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 22:26:22,463 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 22:34:39,002 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 22:34:39,003 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 22:34:39,004 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 22:34:48,709 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 22:34:48,709 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 22:34:48,709 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 22:35:26,197 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 22:36:04,063 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 22:37:32,249 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=31100.wav，格式=audio/wav，大小=1.43MB
+2025-10-28 22:37:32,250 - XTTS2Service - INFO - tts:172 - 语音素材保存成功：路径=data/voice_materials/clone_335eb1900f02.wav，素材ID=clone_335eb1900f02
+2025-10-28 22:37:34,862 - XTTS2Service - INFO - tts_service:343 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 22:37:34,862 - XTTS2Service - INFO - tts:237 - 开始克隆音色生成：素材ID=clone_335eb1900f02，文本长度=182
+2025-10-28 22:37:34,869 - XTTS2Service - WARNING - tts_service:558 - 参考音频时长过长（17.03秒）| 克隆耗时可能增加 | 建议 3-10 秒
+2025-10-28 22:37:57,102 - XTTS2Service - INFO - tts_service:633 - 克隆语音生成成功 | 路径: output/xtts2/generated/clone/clone_057fa985626b.wav
+2025-10-28 22:37:57,102 - XTTS2Service - ERROR - tts:264 - 克隆生成失败: concurrent.futures.Future is expected, got 'output/xtts2/generated/clone/clone_057fa985626b.wav'
+Traceback (most recent call last):
+  File "/home/wxa/tts-system/tts-backend/app/routers/tts.py", line 241, in generate_tts_with_clone
+    output_file = await asyncio.wrap_future(
+  File "/home/wxa/anaconda3/envs/tts_system/lib/python3.10/asyncio/futures.py", line 411, in wrap_future
+    assert isinstance(future, concurrent.futures.Future), \
+AssertionError: concurrent.futures.Future is expected, got 'output/xtts2/generated/clone/clone_057fa985626b.wav'
+2025-10-28 22:44:01,386 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 22:44:01,387 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 22:44:01,388 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 22:44:12,540 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 22:44:12,540 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 22:44:12,540 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 22:44:23,701 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 22:44:23,701 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 22:44:23,703 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 22:44:34,387 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 22:44:34,387 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 22:44:34,387 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 22:45:33,023 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 22:45:33,023 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 22:45:33,025 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 22:45:46,845 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 22:45:46,845 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 22:45:46,845 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 22:47:02,849 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 22:47:36,839 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 22:48:44,175 - XTTS2Service - INFO - tts:151 - 开始处理语音素材上传：文件名=31100.wav，格式=audio/wav，大小=1.43MB
+2025-10-28 22:48:44,176 - XTTS2Service - INFO - tts:172 - 语音素材保存成功：路径=data/voice_materials/clone_cc440779b017.wav，素材ID=clone_cc440779b017
+2025-10-28 22:48:47,195 - XTTS2Service - INFO - tts_service:343 - 获取支持的模型列表成功 | 模型数量: 1 | 模型列表: ['tts_models/multilingual/multi-dataset/xtts_v2']
+2025-10-28 22:48:47,196 - XTTS2Service - INFO - tts:237 - 开始克隆音色生成：素材ID=clone_cc440779b017，文本长度=182
+2025-10-28 22:48:47,203 - XTTS2Service - WARNING - tts_service:558 - 参考音频时长过长（17.03秒）| 克隆耗时可能增加 | 建议 3-10 秒
+2025-10-28 22:49:34,460 - XTTS2Service - INFO - tts_service:633 - 克隆语音生成成功 | 路径: output/xtts2/generated/clone/clone_12eec01108ad.wav
+2025-10-28 23:01:11,564 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 23:01:11,565 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 23:01:11,566 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 23:01:23,087 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 23:01:23,087 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 23:01:23,087 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 23:02:51,868 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 23:02:51,868 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 23:02:51,870 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 23:03:03,050 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 23:03:03,050 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 23:03:03,050 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 23:03:45,371 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 23:04:45,663 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 23:09:53,777 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 23:10:10,734 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）
+2025-10-28 23:16:37,355 - XTTS2Service - INFO - tts_service:214 - 日志系统初始化完成 | 日志文件路径: ./logs/xtts2/xtts2_service.log
+2025-10-28 23:16:37,355 - XTTS2Service - INFO - tts_service:226 - 线程池初始化成功 | 最大线程数: 4
+2025-10-28 23:16:37,357 - XTTS2Service - INFO - tts_service:274 - 初始化 XTTS-V2 | TTS版本: 0.22.0 | 设备: cuda | 模型名: tts_models/multilingual/multi-dataset/xtts_v2
+2025-10-28 23:16:46,922 - XTTS2Service - INFO - tts_service:286 - XTTS-V2 初始化成功！核心功能（生成/克隆）已就绪
+2025-10-28 23:16:46,922 - XTTS2Service - INFO - tts_service:310 - 所有说话人参考音频验证通过，可正常使用语音生成功能
+2025-10-28 23:16:46,922 - XTTS2Service - INFO - tts_service:697 - XTTS-V2 全局服务实例创建成功！可开始调用语音生成/克隆接口
+2025-10-28 23:18:28,551 - XTTS2Service - INFO - tts_service:329 - 返回默认说话人列表（共 8 个）

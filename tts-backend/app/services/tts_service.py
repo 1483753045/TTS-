@@ -9,6 +9,7 @@ from TTS.api import TTS  # 确保安装的是 TTS==0.20.0
 from pathlib import Path
 from TTS.tts.models.xtts import Xtts
 from TTS.config import load_config
+from uuid import uuid4
 
 from TTS import __version__
 
@@ -68,7 +69,7 @@ def validate_xtts_language(language: str) -> str:
         "pt": "pt", "portuguese": "pt",
         "ru": "ru", "russian": "ru",
         "tr": "tr", "turkish": "tr",  # 添加土耳其语支持
-        "ja": "ja", "japanese": "ja"   # 添加日语支持
+        "ja": "ja", "japanese": "ja"  # 添加日语支持
     }
     language = language.strip().lower()
     if language not in supported_langs:
@@ -135,7 +136,7 @@ class XTTS2Service:
             "de_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "de_sample.wav"),
             "pt_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "pt_sample.wav"),
             "tr_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "tr_sample.wav"),  # 土耳其语
-            "ja_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "ja-sample.wav")    # 日语
+            "ja_0": os.path.join(self.settings["REFERENCE_VOICE_DIR"], "ja-sample.wav")  # 日语
         }
 
         # 3. 初始化日志（确保目录存在）
@@ -595,6 +596,46 @@ class XTTS2Service:
             "pt": "葡萄牙语", "ru": "俄语", "tr": "土耳其语", "ja": "日语"
         }
         return [(lang, lang_map[lang]) for lang in self.supported_languages]
+
+    def generate_speech_with_clone(self, text, clone_speaker_wav, language="zh-cn"):
+        """
+        基于自定义素材克隆音色生成语音（优化后）
+        :param text: 目标文本
+        :param clone_speaker_wav: 自定义克隆参考音频路径（用户上传的素材）
+        :param language: 语言代码（默认中文）
+        :return: 生成的音频文件路径
+        """
+        try:
+            # 1. 移除 self.load_model(model)：单例已初始化模型，无需重复加载
+            # 2. 校验服务状态和输入（复用现有辅助方法，避免遗漏校验）
+            self._check_service_status()  # 检查服务是否已初始化
+            text = self._validate_text(text)  # 校验文本长度
+            clone_speaker_wav = self._validate_reference_wav(clone_speaker_wav, required=True)  # 校验素材有效性
+            language = validate_xtts_language(language)  # 校验语言码
+
+            # 3. 生成克隆音频输出路径（与原有克隆逻辑的 output_dir 保持一致）
+            output_dir = Path(self.settings["OUTPUT_DIR"]) / "generated" / "clone"
+            output_dir.mkdir(exist_ok=True, parents=True)
+            output_file = output_dir / f"clone_{uuid4().hex[:12]}.wav"
+
+            # 4. XTTS-V2 核心克隆调用（复用现有逻辑，确保参数正确）
+            self.tts.tts_to_file(
+                text=text,
+                speaker_wav=clone_speaker_wav,
+                language=language,
+                file_path=str(output_file),
+                speed=1.0,
+                temperature=0.7  # 增加温度参数，平衡克隆相似度与自然度
+            )
+
+            # 5. 校验生成结果（确保音频有效）
+            self._validate_audio(str(output_file))
+            self.logger.info(f"克隆语音生成成功 | 路径: {output_file}")
+            return str(output_file)
+        except Exception as e:
+            # 用 self.logger 而非全局 logger，确保日志归属正确
+            self.logger.error(f"克隆生成失败: {str(e)}", exc_info=True)
+            raise
 
     # ------------------------------
     # 资源释放（析构函数）
